@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="JohnSon & Jeisson en busca de menjurges en la plaza">
+    <meta name="description" content="Johnson & Jeisson en busca de menjurges en la plaza">
     <title>ayayayay! que dolor, necesito una aromática</title>
     <link rel="shortcut icon" href="https://images.rappi.com.mx/products/975699513-1546892416.png?d=136x136">
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
@@ -15,12 +15,17 @@
     
         
         <a-assets>
+            <a-asset-items id="warehouse" src="./assets/bodega.glb" preload="auto"></a-asset-item>
             <audio id="insectos" src="./assets/Synthetic_Insects.mp3" preload="auto"></audio>
             <audio id="zombie" src="./assets/Aggressive_Zombie_Snarls.mp3" preload="auto"></audio>
             <audio id="batalla" src="./assets/Battle_Agony_Moans.mp3" preload="auto"></audio>
             <audio id="viento" src="./assets/Hallow_Wind.mp3" preload="auto"></audio>
             <audio id="voces" src="./assets/Voices_Moaning.mp3" preload="auto"></audio>
-            <a-asset-items id="warehouse" src="./assets/bodega.glb"></a-asset-item>
+            <audio id="tos" src="./assets/concierto de tos.mp3" preload="auto"></audio>
+            <audio id="mimir" src="./assets/descanso.mp3" preload="auto"></audio>
+            <audio id="tetera" src="./assets/tetera.mp3" preload="auto"></audio>
+            <audio id="suspiro" src="./assets/Hombre suspira - efecto de sonido.mp3" preload="auto"></audio>
+            
         </a-assets>
                        <a-entity gltf-model="#warehouse" scale="2 2 2" position="0 0 2"></a-entity>
                        <a-entity position="18 -3.3 -15"> <a-camera></a-camera>  </a-entity>
@@ -29,6 +34,11 @@
                        <a-entity sound="src:#batalla; autoplay: true" position=" 12 -3.3 -3" loop="true"></a-entity>
                        <a-entity sound="src:#voces; autoplay: true" position=" 18 -3.3 -15" loop="true"></a-entity>
                        <a-entity sound="src:#zombie; autoplay: true" position=" 18 -3.3 20" loop="true"></a-entity>
+                       <a-entity sound="src:#tos; autoplay: true" position=" 5 -3.3 20" loop="true"></a-entity>
+                       <a-entity sound="src:#mimir; autoplay: true" position=" 40 -3.3 7" loop="true"></a-entity>
+                       <a-entity sound="src:#tetera; autoplay: true" position=" 7 -3.3 20" loop="true"></a-entity>
+                       <a-entity sound="src:#suspiro; autoplay: true" position=" 26 -3.3 11" loop="true"></a-entity>
+                       
                        
 
     </a-scene>
