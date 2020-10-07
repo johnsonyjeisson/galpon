@@ -8,36 +8,27 @@
     <title>ayayayay! que dolor, necesito una aromática</title>
     <link rel="shortcut icon" href="https://images.rappi.com.mx/products/975699513-1546892416.png?d=136x136">
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
     </head>
 
 <body>
-    <a-scene background="color: #AAB" fog="type: linear; color: #AAB; far:15; near: -10">
     
         
+        <a-scene background="color: 60" fog="type: linear; color: #000; far:-100; near: -200">
         <a-assets>
             <a-asset-items id="warehouse" src="./assets/bodega.glb" preload="auto"></a-asset-item>
-            <audio id="insectos" src="./assets/Synthetic_Insects.mp3" preload="auto" autoplay loop="true"></audio>
-            <audio id="zombie" src="./assets/Aggressive_Zombie_Snarls.mp3" preload="auto" autoplay loop="true"></audio>
-            <audio id="batalla" src="./assets/Battle_Agony_Moans.mp3" preload="auto" autoplay loop="true"></audio>
+            <!--
             <audio id="viento" src="./assets/Hallow_Wind.mp3" preload="auto" autoplay loop="true"></audio>
-            <audio id="voces" src="./assets/Voices_Moaning.mp3" preload="auto" autoplay loop="true"></audio>
-            <audio id="tos" src="./assets/concierto de tos.mp3" preload="auto" autoplay loop="true"></audio>
-            <audio id="mimir" src="./assets/descanso.mp3" preload="auto" autoplay loop="true"></audio>
-            <audio id="tetera" src="./assets/tetera.mp3" preload="auto" autoplay loop="true"></audio>
-            <audio id="suspiro" src="./assets/Hombre suspira - efecto de sonido.mp3" preload="auto" autoplay loop="true"></audio>
+            -->
             
         </a-assets>
-                       <a-entity gltf-model="#warehouse" scale="2 2 2" position="0 0 2"></a-entity>
-                       <a-entity position="18 -3.3 -15"> <a-camera></a-camera>  </a-entity>
+                       <a-entity gltf-model="#warehouse" scale="2 2 2" position="-65 4.5 60"></a-entity>
+                         
+                       <a-entity environment="preset: yavapai; groundColor: #740; skyType: color; skyColor: #eeebfb; shadow: true; seed: 1"></a-entity>
+                      <!-- 
+                        <a-entity position="18 -0.3 -15"> <a-camera></a-camera>  </a-entity> 
                        <a-entity sound="src:#viento; autoplay: true" position=" 18 -3.3 -15" loop="true"></a-entity>
-                       <a-entity sound="src:#insectos; autoplay: true" position=" 3 -3.3 -3" loop="true"></a-entity>
-                       <a-entity sound="src:#batalla; autoplay: true" position=" 12 -3.3 -3" loop="true"></a-entity>
-                       <a-entity sound="src:#voces; autoplay: true" position=" 18 -3.3 -15" loop="true"></a-entity>
-                       <a-entity sound="src:#zombie; autoplay: true" position=" 18 -3.3 20" loop="true"></a-entity>
-                       <a-entity sound="src:#tos; autoplay: true" position=" 5 -3.3 20" loop="true"></a-entity>
-                       <a-entity sound="src:#mimir; autoplay: true" position=" 40 -3.3 7" loop="true"></a-entity>
-                       <a-entity sound="src:#tetera; autoplay: true" position=" 7 -3.3 20" loop="true"></a-entity>
-                       <a-entity sound="src:#suspiro; autoplay: true" position=" 26 -3.3 11" loop="true"></a-entity>
+                    -->
                        
                        
 
