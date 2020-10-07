@@ -17,17 +17,16 @@
         <a-scene background="color: 60" fog="type: linear; color: #000; far:-100; near: -200">
         <a-assets>
             <a-asset-items id="warehouse" src="./assets/bodega.glb" preload="auto"></a-asset-item>
-            <!--
-            <audio id="viento" src="./assets/Hallow_Wind.mp3" preload="auto" autoplay loop="true"></audio>
-            -->
+            <audio id="miedito" src="./assets/destrozaste-mi-alma.mp3" preload="auto" autoplay loop="true"></audio>
+            
             
         </a-assets>
                        <a-entity gltf-model="#warehouse" scale="2 2 2" position="-65 4.5 60"></a-entity>
-                         
                        <a-entity environment="preset: yavapai; groundColor: #740; skyType: color; skyColor: #d5d8ff; shadow: true; seed: 1"></a-entity>
+                       <a-entity sound="src:#miedito; autoplay: true" position=" 18 -3.3 -15" loop="true"></a-entity>
                       <!-- 
                         <a-entity position="18 -0.3 -15"> <a-camera></a-camera>  </a-entity> 
-                       <a-entity sound="src:#viento; autoplay: true" position=" 18 -3.3 -15" loop="true"></a-entity>
+                       
                     -->
                        
                        
